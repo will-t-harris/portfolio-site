@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       colors: {
         navbarBackground: "#2B2728",
+        bodyBackground: "#333030",
+      },
+      gridTemplateRows: {
+        "12": "repeat(12, 1fr)",
       },
     },
   },
