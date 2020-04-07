@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         navbarBackground: "#2B2728",
         bodyBackground: "#333030",
+        primaryGreen: "#19D938",
       },
     },
   },
