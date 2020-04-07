@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main className="pt-32 bg-bodyBackground text-white grid grid-cols-12 grid-rows-12">
+      <main className="pt-32 bg-bodyBackground text-white grid grid-cols-12 grid-rows-6">
         {children}
       </main>
       <footer>
