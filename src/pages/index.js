@@ -2,12 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 import SEO from "../components/SEO"
+import ProjectCard from "../components/ProjectCard"
 
 const IndexPage = () => (
   <>
     <SEO title="Home" />
 
-    <div className="col-start-4 row-start-1">
+    <div className="mx-auto lg:ml-64 mb-8">
       <svg width="40" height="40">
         <path
           d="M4.861 9.105c.94-.657 2.357-.531 3.201.166l-.968-1.407c-.779-1.111-.5-2.313.612-3.093 1.112-.777 4.263 1.312 4.263 1.312-.786-1.122-.639-2.544.483-3.331a2.483 2.483 0 013.456.611l10.42 14.72L25 30.958l-11.083-4.042L4.25 12.583a2.495 2.495 0 01.611-3.478z"
@@ -31,18 +32,21 @@ const IndexPage = () => (
         />
       </svg>
     </div>
-    <p className="font-body row-start-3 col-start-4 col-end-9">
+    <p className="font-body font-semibold mx-auto lg:ml-64 w-64 mb-12">
       Blurb about me blah blah blah Lorem ipsum dolor sit amet, consectetur
       adipiscing elit. Praesent vitae orci at.
     </p>
 
-    <div className="row-start-5 col-start-4 col-end-5 text-center">
-      <h2 className="font-body text-2xl font-semibold border-b-8 border-primaryGreen w-32">
+    <div className="text-center mx-auto">
+      <h2 className="font-body text-2xl font-semibold border-b-8 border-primary w-32 mb-12">
         Projects
       </h2>
     </div>
+    <div className="mx-auto">
+      <ProjectCard />
+    </div>
 
-    <div className="col-start-4 row-start-7 row-end-8">
+    <div className="">
       <Link to="/page-2/">Go to page 2</Link>
     </div>
   </>
