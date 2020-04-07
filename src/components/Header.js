@@ -8,7 +8,7 @@ const toggleMenu = event => {
 
 const Header = ({ siteTitle }) => (
   <header>
-    <nav class="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0">
+    <nav class="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0 navbar-linear-gradient">
       <div class="flex items-center flex-shrink-0 text-white mr-6">
         <a
           class="text-white no-underline hover:text-white hover:no-underline"

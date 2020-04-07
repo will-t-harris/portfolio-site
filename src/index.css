@@ -623,6 +623,12 @@ video {
   }
 }
 
+.navbar-linear-gradient {
+  border-bottom-width: 8px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #19d938, #ff0545, #ff7d05);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
