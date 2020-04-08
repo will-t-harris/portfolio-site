@@ -629,6 +629,60 @@ video {
   border-image-source: linear-gradient(to left, #19d938, #ff0545, #ff7d05);
 }
 
+.hr-primary-dark {
+  height: 4px;
+  background-color: #0e771f;
+  border: 0;
+}
+
+.hr-primary {
+  height: 4px;
+  background-color: #19d938;
+  border: 0;
+}
+
+.hr-primary-light {
+  height: 4px;
+  background-color: #96eda4;
+  border: 0;
+}
+
+.hr-secondary-dark {
+  height: 4px;
+  background-color: #8c4503;
+  border: 0;
+}
+
+.hr-secondary {
+  height: 4px;
+  background-color: #ff7d05;
+  border: 0;
+}
+
+.hr-secondary-light {
+  height: 4px;
+  background-color: #ffb876;
+  border: 0;
+}
+
+.hr-accent-light {
+  height: 4px;
+  background-color: #ff8daa;
+  border: 0;
+}
+
+.hr-accent {
+  height: 4px;
+  background-color: #ff0545;
+  border: 0;
+}
+
+.hr-accent-dark {
+  height: 4px;
+  background-color: #ba0433;
+  border: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
