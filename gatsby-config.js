@@ -39,5 +39,13 @@ module.exports = {
         tailwind: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /icons/,
+        },
+      },
+    },
   ],
 }
