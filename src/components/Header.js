@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import MenuHamburger from "../icons/menuHamburger.svg"
+
 const toggleMenu = event => {
   document.getElementById("nav-content").classList.toggle("hidden")
 }
@@ -26,17 +28,7 @@ const Header = ({ siteTitle }) => (
           className="flex items-center px-3 py-2 text-gray-500 border-gray-600 hover:text-white hover:border-white"
           onClick={toggleMenu}
         >
-          <svg
-            width="22"
-            height="19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M.786 3.375h20.428c.434 0 .786-.336.786-.75V.75c0-.414-.352-.75-.786-.75H.786C.352 0 0 .336 0 .75v1.875c0 .414.352.75.786.75zm0 7.5h20.428c.434 0 .786-.336.786-.75V8.25c0-.414-.352-.75-.786-.75H.786C.352 7.5 0 7.836 0 8.25v1.875c0 .414.352.75.786.75zm0 7.5h20.428c.434 0 .786-.336.786-.75V15.75c0-.414-.352-.75-.786-.75H.786c-.434 0-.786.336-.786.75v1.875c0 .414.352.75.786.75z"
-              fill="#fff"
-            />
-          </svg>
+          <MenuHamburger />
         </button>
       </div>
 
