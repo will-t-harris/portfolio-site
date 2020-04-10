@@ -11,7 +11,7 @@ const ProjectImage = ({ data, url, border }) => (
     />
     <a
       href={`https://www.${url}`}
-      className={`font-body font-bold self-center mr-12 lg:mr-auto border-b-2 ${border}`}
+      className={`font-body font-semibold self-center mr-12 lg:mr-auto border-b-2 ${border}`}
     >
       {url}
     </a>
