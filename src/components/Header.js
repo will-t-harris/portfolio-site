@@ -38,36 +38,28 @@ const Header = ({ siteTitle }) => (
       >
         <ul className="list-reset lg:flex justify-end flex-1 items-center">
           <li className="mr-3">
-            <a
+            <Link
               className="inline-block py-2 px-4 text-white no-underline"
-              href="#"
+              to="#"
             >
-              Active
-            </a>
+              Home
+            </Link>
           </li>
           <li className="mr-3">
-            <a
+            <Link
               className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#"
+              to="#"
             >
-              link
-            </a>
+              Resume
+            </Link>
           </li>
           <li className="mr-3">
-            <a
+            <Link
               className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#"
+              to="#"
             >
-              link
-            </a>
-          </li>
-          <li className="mr-3">
-            <a
-              className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#"
-            >
-              link
-            </a>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
