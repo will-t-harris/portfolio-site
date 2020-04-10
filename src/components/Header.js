@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import MenuHamburger from "../icons/menuHamburger.svg"
+import HamburgerMenu from "../icons/HamburgerMenu"
 
 const toggleMenu = event => {
   document.getElementById("nav-content").classList.toggle("hidden")
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
           className="flex items-center px-3 py-2 text-gray-500 border-gray-600 hover:text-white hover:border-white"
           onClick={toggleMenu}
         >
-          <MenuHamburger />
+          <HamburgerMenu />
         </button>
       </div>
 

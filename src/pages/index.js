@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/SEO"
 import ProjectImage from "../components/ProjectImage"
-import WaveEmoji from "../components/WaveEmoji"
+import WaveEmoji from "../icons/WaveEmoji"
 import HorizontalRulePrimary from "../components/HorizontalRulePrimary"
 import HorizontalRuleSecondary from "../components/HorizontalRuleSecondary"
 import HorizontalRuleAccent from "../components/HorizontalRuleAccent"
