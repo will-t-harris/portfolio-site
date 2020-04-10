@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/SEO"
 import ProjectImage from "../components/ProjectImage"
@@ -65,10 +65,6 @@ const IndexPage = () => {
           border="border-secondary"
         />
         <HorizontalRulePrimary />
-      </div>
-
-      <div>
-        <Link to="/page-2/">Go to page 2</Link>
       </div>
     </>
   )
