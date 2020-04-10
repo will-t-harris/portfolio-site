@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         navbarBackground: "#2B2728",
         bodyBackground: "#333030",
+        footerBackground: "#524E4E",
         primary: "#19D938",
         primaryDark: "#0E771F",
         primaryLight: "#96EDA4",
