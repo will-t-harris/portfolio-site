@@ -1,9 +1,10 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-export default function TwitterIcon() {
+export default function TwitterIcon({ twClasses }) {
   return (
     <svg
-      className="h-6 w-6"
+      className={`h-6 w-6 ${twClasses}`}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -13,4 +14,8 @@ export default function TwitterIcon() {
       />
     </svg>
   )
+}
+
+TwitterIcon.propTypes = {
+  twClasses: PropTypes.string,
 }
