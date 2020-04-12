@@ -4,24 +4,28 @@ import { Link } from "gatsby"
 import GithubIcon from "../icons/GitHubIcon"
 import TwitterIcon from "../icons/TwitterIcon"
 import LinkedInIcon from "../icons/LinkedInIcon"
-import CopyrightIcon from "../icons/CopyrightIcon"
+import CodeIcon from "../icons/CodeIcon"
 
 const Footer = () => {
   return (
-    <div className="bg-footerBackground ">
-      <div className="flex justify-start font-body font-semibold text-white">
-        <Link to="#" className="mr-10">
+    <div className="bg-footerBackground px-20">
+      <div className="flex justify-start font-body font-semibold text-white pt-6">
+        <Link to="#" className="pr-4 border-r-2 border-primary">
           Contact
         </Link>
-        <Link to="#">Resume</Link>
+        <Link to="#" className="pl-4 mr-auto">
+          Resume
+        </Link>
+        <div className="flex">
+          <GithubIcon twClasses="mr-2" />
+          <TwitterIcon twClasses="mr-2" />
+          <LinkedInIcon />
+        </div>
       </div>
-      <div className="flex justify-end ">
-        <GithubIcon />
-        <TwitterIcon />
-        <LinkedInIcon />
-      </div>
-      <div className="flex text-white items-center mx-auto">
-        <CopyrightIcon /> 2020 Will Harris
+      <div className="flex text-white mt-6">
+        <div className="flex mx-auto items-center">
+          <CodeIcon /> 2020 Will Harris
+        </div>
       </div>
     </div>
   )
