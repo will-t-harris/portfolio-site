@@ -37,12 +37,12 @@ const IndexPage = () => {
       </p>
 
       <div className="text-center mx-auto">
-        <h2 className="font-body text-2xl font-bold border-b-8 border-primary w-32 mb-12 lg:mb-16">
+        <h2 className="font-body text-2xl font-bold border-b-8 border-primary w-32 mb-24 lg:mb-32">
           Projects
         </h2>
       </div>
 
-      <div className="w-full mb-10">
+      <div className="w-full mb-20 lg:mb-40">
         <ProjectImage
           url="rebeccawaldron.net"
           data={data.allFile.nodes[0]}
@@ -50,7 +50,7 @@ const IndexPage = () => {
         />
         <HorizontalRuleSecondary />
       </div>
-      <div className="w-full mb-10">
+      <div className="w-full mb-20 lg:mb-40">
         <ProjectImage
           url="bikesandbytes.net"
           data={data.allFile.nodes[1]}
@@ -58,7 +58,7 @@ const IndexPage = () => {
         />
         <HorizontalRuleAccent />
       </div>
-      <div className="w-full mb-10">
+      <div className="w-full mb-0">
         <ProjectImage
           url="bikesandbytes.net"
           data={data.allFile.nodes[1]}

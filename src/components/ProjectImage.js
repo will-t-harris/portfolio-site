@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 const ProjectImage = ({ data, url, border }) => (
-  <div className="flex pb-8">
+  <div className="flex pb-16 max-w-4xl">
     <Img
       fixed={data.childImageSharp.fixed}
       className={`border-2 ${border} mx-auto lg:ml-64`}

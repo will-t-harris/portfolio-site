@@ -8,23 +8,23 @@ import CodeIcon from "../icons/CodeIcon"
 
 const Footer = () => {
   return (
-    <div className="bg-footerBackground px-20 py-6">
-      <div className="flex justify-start font-body font-semibold text-white">
-        <Link to="#" className="pr-4 border-r-2 border-primary">
-          Contact
-        </Link>
-        <Link to="#" className="pl-4 mr-auto">
-          Resume
-        </Link>
+    <div className="bg-footerBackground pt-12 pb-6">
+      <div className="flex justify-evenly font-body font-semibold text-white">
+        <div className="flex">
+          <Link to="#" className="pr-4 border-r-2 border-primary">
+            Contact
+          </Link>
+          <Link to="#" className="pl-4">
+            Resume
+          </Link>
+        </div>
+        <div className="flex">
+          <CodeIcon /> 2020 Will Harris
+        </div>
         <div className="flex">
           <GithubIcon twClasses="mr-2 icon-transition" />
           <TwitterIcon twClasses="mr-2 icon-transition" />
           <LinkedInIcon twClasses=" icon-transition" />
-        </div>
-      </div>
-      <div className="flex text-white mt-6">
-        <div className="flex mx-auto items-center">
-          <CodeIcon /> 2020 Will Harris
         </div>
       </div>
     </div>
