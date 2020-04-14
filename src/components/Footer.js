@@ -17,9 +17,9 @@ const Footer = () => {
           Resume
         </Link>
         <div className="flex">
-          <GithubIcon twClasses="mr-2" />
-          <TwitterIcon twClasses="mr-2" />
-          <LinkedInIcon />
+          <GithubIcon twClasses="mr-2 icon-transition" />
+          <TwitterIcon twClasses="mr-2 icon-transition" />
+          <LinkedInIcon twClasses=" icon-transition" />
         </div>
       </div>
       <div className="flex text-white mt-6">

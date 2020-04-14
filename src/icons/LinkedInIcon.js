@@ -1,10 +1,11 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-export default function LinkedInIcon() {
+export default function LinkedInIcon({ twClasses }) {
   return (
     <a href="https://www.linkedin.com/in/will-t-harris/">
       <svg
-        className="h-6 w-6"
+        className={`h-6 w-6 ${twClasses}`}
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -15,4 +16,8 @@ export default function LinkedInIcon() {
       </svg>
     </a>
   )
+}
+
+LinkedInIcon.propTypes = {
+  twClasses: PropTypes.string,
 }

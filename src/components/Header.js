@@ -4,7 +4,7 @@ import React from "react"
 
 import HamburgerMenu from "../icons/HamburgerMenu"
 
-const toggleMenu = event => {
+const toggleMenu = () => {
   document.getElementById("nav-content").classList.toggle("hidden")
 }
 
