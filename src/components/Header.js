@@ -8,7 +8,7 @@ const toggleMenu = () => {
   document.getElementById("nav-content").classList.toggle("hidden")
 }
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, resume }) => (
   <header>
     <nav className="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0 navbar-linear-gradient">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -46,12 +46,13 @@ const Header = ({ siteTitle }) => (
             </Link>
           </li>
           <li className="mr-3">
-            <Link
+            <a
               className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              to="#"
+              href={resume}
+              download
             >
               Resume
-            </Link>
+            </a>
           </li>
           <li className="mr-3">
             <Link
