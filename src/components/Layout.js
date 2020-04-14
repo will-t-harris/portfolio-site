@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
       <main className="pt-32 bg-bodyBackground text-white flex flex-col">
         {children}
       </main>
-      <Footer />
+      <Footer resume={data.resume.publicURL} />
     </>
   )
 }

@@ -6,7 +6,7 @@ import TwitterIcon from "../icons/TwitterIcon"
 import LinkedInIcon from "../icons/LinkedInIcon"
 import CodeIcon from "../icons/CodeIcon"
 
-const Footer = () => {
+const Footer = ({ resume }) => {
   return (
     <div className="bg-black py-8">
       <div className="flex justify-evenly font-body font-semibold text-white">
@@ -14,9 +14,9 @@ const Footer = () => {
           <Link to="#" className="pr-4 border-r-2 border-primary">
             Contact
           </Link>
-          <Link to="#" className="pl-4">
+          <a href={resume} className="pl-4" download>
             Resume
-          </Link>
+          </a>
         </div>
         <div className="lg:flex hidden">
           <CodeIcon /> 2020 Will Harris
