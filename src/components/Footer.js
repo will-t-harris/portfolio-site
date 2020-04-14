@@ -8,7 +8,7 @@ import CodeIcon from "../icons/CodeIcon"
 
 const Footer = () => {
   return (
-    <div className="bg-footerBackground py-8">
+    <div className="bg-black py-8">
       <div className="flex justify-evenly font-body font-semibold text-white">
         <div className="flex">
           <Link to="#" className="pr-4 border-r-2 border-primary">
