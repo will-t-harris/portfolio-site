@@ -2,9 +2,9 @@ import React from "react"
 
 const HorizontalRulePrimary = () => (
   <>
-    <hr className="hr-primary-dark" />
-    <hr className="hr-primary" />
-    <hr className="hr-primary-light" />
+    <hr className="hr-primary-dark" aria-hidden="true" />
+    <hr className="hr-primary" aria-hidden="true" />
+    <hr className="hr-primary-light" aria-hidden="true" />
   </>
 )
 

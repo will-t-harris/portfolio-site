@@ -2,9 +2,9 @@ import React from "react"
 
 const HorizontalRuleAccent = () => (
   <>
-    <hr className="hr-accent-dark" />
-    <hr className="hr-accent" />
-    <hr className="hr-accent-light" />
+    <hr className="hr-accent-dark" aria-hidden="true" />
+    <hr className="hr-accent" aria-hidden="true" />
+    <hr className="hr-accent-light" aria-hidden="true" />
   </>
 )
 
