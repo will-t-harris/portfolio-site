@@ -12,7 +12,7 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: ``,
   },
-  testURL: `http://localhost:8000`,
+  testURL: `http://localhost`,
   setupFiles: [`<rootDir>/loadershim.js`],
   setupFilesAfterEnv: ["<rootDir>/setup-test-env.js"],
 }
