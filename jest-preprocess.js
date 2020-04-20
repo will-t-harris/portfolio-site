@@ -1,3 +1,4 @@
+// tell jest to use the gatsby babel preset
 const babelOptions = {
   presets: ["babel-preset-gatsby"],
 }
