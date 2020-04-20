@@ -1,4 +1,5 @@
 module.exports = {
+  // this transform tells jest that all js or jsx files need to be transformed according to the config defined in jest-preprocess.js
   transform: {
     "^.+\\.jsx?$": `<rootDir>/jest-preprocess.js`,
   },
