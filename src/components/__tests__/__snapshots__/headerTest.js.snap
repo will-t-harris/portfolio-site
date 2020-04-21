@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches previous snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <nav
+          class="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0 navbar-linear-gradient"
+        >
+          <div
+            class="flex items-center flex-shrink-0 text-white mr-6"
+          >
+            <a
+              class="text-white no-underline hover:text-white hover:no-underline"
+              href="#"
+            >
+              <span
+                class="font-body font-bold font-semibold text-2xl pl-2"
+              >
+                willharris.dev
+              </span>
+            </a>
+          </div>
+          <div
+            class="block lg:hidden"
+          >
+            <button
+              class="flex items-center px-3 py-2 text-gray-500 border-gray-600 hover:text-white hover:border-white"
+              id="nav-toggle"
+            >
+              <svg
+                fill="none"
+                height="19"
+                width="22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M.786 3.375h20.428c.434 0 .786-.336.786-.75V.75c0-.414-.352-.75-.786-.75H.786C.352 0 0 .336 0 .75v1.875c0 .414.352.75.786.75zm0 7.5h20.428c.434 0 .786-.336.786-.75V8.25c0-.414-.352-.75-.786-.75H.786C.352 7.5 0 7.836 0 8.25v1.875c0 .414.352.75.786.75zm0 7.5h20.428c.434 0 .786-.336.786-.75V15.75c0-.414-.352-.75-.786-.75H.786c-.434 0-.786.336-.786.75v1.875c0 .414.352.75.786.75z"
+                  fill="#fff"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+            id="nav-content"
+          >
+            <ul
+              class="list-reset lg:flex justify-end flex-1 items-center"
+            >
+              <li
+                class="mr-3"
+              >
+                <a
+                  class="inline-block py-2 px-4 text-white no-underline"
+                  href="#"
+                >
+                  Home
+                </a>
+              </li>
+              <li
+                class="mr-3"
+              >
+                <a
+                  class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                  download=""
+                >
+                  Resume
+                </a>
+              </li>
+              <li
+                class="mr-3"
+              >
+                <a
+                  class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                  href="#"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <nav
+        class="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0 navbar-linear-gradient"
+      >
+        <div
+          class="flex items-center flex-shrink-0 text-white mr-6"
+        >
+          <a
+            class="text-white no-underline hover:text-white hover:no-underline"
+            href="#"
+          >
+            <span
+              class="font-body font-bold font-semibold text-2xl pl-2"
+            >
+              willharris.dev
+            </span>
+          </a>
+        </div>
+        <div
+          class="block lg:hidden"
+        >
+          <button
+            class="flex items-center px-3 py-2 text-gray-500 border-gray-600 hover:text-white hover:border-white"
+            id="nav-toggle"
+          >
+            <svg
+              fill="none"
+              height="19"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M.786 3.375h20.428c.434 0 .786-.336.786-.75V.75c0-.414-.352-.75-.786-.75H.786C.352 0 0 .336 0 .75v1.875c0 .414.352.75.786.75zm0 7.5h20.428c.434 0 .786-.336.786-.75V8.25c0-.414-.352-.75-.786-.75H.786C.352 7.5 0 7.836 0 8.25v1.875c0 .414.352.75.786.75zm0 7.5h20.428c.434 0 .786-.336.786-.75V15.75c0-.414-.352-.75-.786-.75H.786c-.434 0-.786.336-.786.75v1.875c0 .414.352.75.786.75z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+          id="nav-content"
+        >
+          <ul
+            class="list-reset lg:flex justify-end flex-1 items-center"
+          >
+            <li
+              class="mr-3"
+            >
+              <a
+                class="inline-block py-2 px-4 text-white no-underline"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li
+              class="mr-3"
+            >
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                download=""
+              >
+                Resume
+              </a>
+            </li>
+            <li
+              class="mr-3"
+            >
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                href="#"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
