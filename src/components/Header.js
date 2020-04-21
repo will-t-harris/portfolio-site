@@ -10,9 +10,11 @@ const toggleMenu = () => {
 
 const Header = ({ siteTitle, resume }) => {
   const [isOpen, setIsOpen] = useState(false)
+
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
   return (
     <header>
       <nav className="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0 navbar-linear-gradient">
