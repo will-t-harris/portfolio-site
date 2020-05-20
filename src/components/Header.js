@@ -1,30 +1,33 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import classnames from "classnames"
 
 import HamburgerMenu from "../icons/HamburgerMenu"
 
-const toggleMenu = () => {
-  document.getElementById("nav-content").classList.toggle("hidden")
-}
-
 const Header = ({ siteTitle, resume }) => {
   const [isOpen, setIsOpen] = useState(false)
+
   const toggleMenu = () => {
     setIsOpen(!isOpen)
   }
+
+  let menuButtonClass = classnames({
+    hidden: !isOpen,
+  })
+
   return (
     <header>
       <nav className="flex items-center justify-between flex-wrap bg-navbarBackground p-6 fixed w-full z-10 top-0 navbar-linear-gradient">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <a
+          <Link
             className="text-white no-underline hover:text-white hover:no-underline"
-            href="#"
+            to="/"
           >
             <span className="font-body font-bold font-semibold text-2xl pl-2">
               willharris.dev
             </span>
-          </a>
+          </Link>
         </div>
 
         <div className="block lg:hidden">
@@ -38,9 +41,7 @@ const Header = ({ siteTitle, resume }) => {
         </div>
 
         <div
-          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0 ${
-            isOpen ? "" : "hidden"
-          }`}
+          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0 ${menuButtonClass}`}
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
