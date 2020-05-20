@@ -12,6 +12,10 @@ const Header = ({ siteTitle, resume }) => {
     setIsOpen(!isOpen)
   }
 
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
   let menuButtonClass = classnames({
     hidden: !isOpen,
   })
@@ -35,6 +39,7 @@ const Header = ({ siteTitle, resume }) => {
             id="nav-toggle"
             className="flex items-center px-3 py-2 text-gray-500 border-gray-600 hover:text-white hover:border-white"
             onClick={toggleMenu}
+            onBlur={closeMenu}
           >
             <HamburgerMenu />
           </button>
