@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Will Harris <will.t.harris@protonmail.com>",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-layout": "^1.2.1",
