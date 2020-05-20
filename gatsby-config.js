@@ -7,6 +7,21 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve("./src/components/Layout.js"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        tailwind: true,
+      },
+    },
+    // Sources
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,32 +34,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/assets`,
         name: `assets`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve("./src/components/Layout.js"),
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        // icon: ``, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        tailwind: true,
       },
     },
   ],
