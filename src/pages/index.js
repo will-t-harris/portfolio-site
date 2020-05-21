@@ -56,7 +56,7 @@ const IndexPage = () => {
 
       <div className="mx-auto my-10">
         <WaveEmoji />
-        <h1 className="font-body text-5xl font-black">Hi, I'm Will!</h1>
+        <h1 className="font-body text-5xl font-black">Hi there, I'm Will!</h1>
       </div>
       <p className="font-body font-bold mx-auto w-1/2 mb-12 leading-8 opacity-75 lg:mb-20 lg:mx-auto">
         Blurb about me blah blah blah Lorem ipsum dolor sit amet, consectetur
