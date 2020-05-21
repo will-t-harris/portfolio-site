@@ -1,11 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import classnames from "classnames"
 
 import HamburgerMenu from "../icons/HamburgerMenu"
 
-const Header = ({ siteTitle, resume }) => {
+const Header = ({ resume }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -54,7 +53,7 @@ const Header = ({ siteTitle, resume }) => {
                 className="inline-block py-2 px-4 text-white no-underline"
                 to="#"
               >
-                Home
+                HOME
               </Link>
             </li>
             <li className="mr-3">
@@ -63,7 +62,7 @@ const Header = ({ siteTitle, resume }) => {
                 href={resume}
                 download
               >
-                Resume
+                RESUME
               </a>
             </li>
             <li className="mr-3">
@@ -71,7 +70,7 @@ const Header = ({ siteTitle, resume }) => {
                 className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
                 to="#"
               >
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>
@@ -79,14 +78,6 @@ const Header = ({ siteTitle, resume }) => {
       </nav>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header
