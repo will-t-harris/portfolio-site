@@ -4,12 +4,7 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 const ProjectImage = ({ data, border }) => (
-  <div className="flex flex-col mt-10">
-    <Img
-      fixed={data.fixed}
-      className={`self-center border-2 ${border} mx-auto lg:ml-64`}
-    />
-  </div>
+  <Img fixed={data.fixed} className={`border-2 ${border} mx-auto lg:mx-0`} />
 )
 
 export default ProjectImage
