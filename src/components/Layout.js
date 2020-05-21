@@ -23,10 +23,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.siteData.siteMetadata.title}
-        resume={data.resume.publicURL}
-      />
+      <Header resume={data.resume.publicURL} />
       <main className="pt-32 bg-bodyBackground text-white flex flex-col">
         {children}
       </main>
