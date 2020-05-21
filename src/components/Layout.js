@@ -10,11 +10,6 @@ import Footer from "./Footer"
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
-      siteData: site {
-        siteMetadata {
-          title
-        }
-      }
       resume: file(name: { regex: "/will-harris/" }) {
         publicURL
       }
