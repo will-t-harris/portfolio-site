@@ -4,20 +4,46 @@ import { useStaticQuery, graphql } from "gatsby"
 import SEO from "../components/SEO"
 import ProjectImage from "../components/ProjectImage"
 import WaveEmoji from "../icons/WaveEmoji"
-import HorizontalRulePrimary from "../components/HorizontalRulePrimary"
-import HorizontalRuleSecondary from "../components/HorizontalRuleSecondary"
-import HorizontalRuleAccent from "../components/HorizontalRuleAccent"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { sourceInstanceName: { eq: "images" } }) {
-        nodes {
-          childImageSharp {
-            id
-            fixed(width: 150) {
-              ...GatsbyImageSharpFixed
-            }
+      bikesAndBytes: file(
+        sourceInstanceName: { eq: "images" }
+        childImageSharp: {
+          fixed: { originalName: { regex: "/bikes-and-bytes/" } }
+        }
+      ) {
+        id
+        childImageSharp {
+          fixed(width: 350) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+      moveWithMadeline: file(
+        sourceInstanceName: { eq: "images" }
+        childImageSharp: {
+          fixed: { originalName: { regex: "/move-with-madeline/" } }
+        }
+      ) {
+        id
+        childImageSharp {
+          fixed(width: 350) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+      abqBikeTrails: file(
+        sourceInstanceName: { eq: "images" }
+        childImageSharp: {
+          fixed: { originalName: { regex: "/abq-bike-trails/" } }
+        }
+      ) {
+        id
+        childImageSharp {
+          fixed(width: 350) {
+            ...GatsbyImageSharpFixed_withWebp
           }
         }
       }
@@ -28,43 +54,110 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
 
-      <div className="mx-auto lg:ml-64 mb-8">
+      <div className="mx-auto my-10">
         <WaveEmoji />
+        <h1 className="font-body text-5xl font-black">Hi, I'm Will!</h1>
       </div>
-      <p className="font-body font-semibold mx-auto lg:ml-64 w-64 mb-12 lg:mb-32">
+      <p className="font-body font-bold mx-auto w-1/2 mb-12 leading-8 opacity-75 lg:mb-20 lg:mx-auto">
         Blurb about me blah blah blah Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Praesent vitae orci at.
+        adipiscing elit. Praesent vitae orci at. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Fusce rhoncus mauris sit amet lobortis
+        rutrum. Nulla non sagittis neque. Mauris eget risus sit amet justo porta
+        vehicula. Morbi a magna volutpat, ullamcorper risus vel, egestas tortor.
+        Morbi tristique, massa vel accumsan dictum, mauris velit tincidunt
+        justo, non ullamcorper tortor neque quis leo. Integer nisl mauris,
+        sollicitudin a imperdiet a, ornare id risus. Duis eleifend leo mauris,
+        pellentesque lacinia nisl volutpat sed.
       </p>
 
-      <div className="text-center mx-auto">
-        <h2 className="font-body text-2xl font-bold border-b-8 border-primary w-32 mb-24 lg:mb-32">
-          Projects
+      <div className="mx-auto mb-10 lg:grid lg:grid-cols-10 lg:grid-rows-1 lg:mb-10 lg:mx-0">
+        <h2 className="text-center font-body text-2xl font-extrabold border-b-8 border-primary w-40 lg:grid lg:col-start-2">
+          PROJECTS
         </h2>
       </div>
 
-      <div className="w-full mb-20 lg:mb-40">
-        <ProjectImage
-          url="rebeccawaldron.net"
-          data={data.allFile.nodes[0]}
-          border="border-primary"
-        />
-        <HorizontalRuleSecondary />
+      <div className="flex flex-col my-10 lg:grid lg:grid-cols-10 lg:grid-rows-1 lg:mt-10">
+        <a
+          href="https://bikesandbytes.net"
+          className="flex flex-col lg:col-start-2 lg:col-span-2"
+        >
+          <ProjectImage
+            data={data.bikesAndBytes.childImageSharp}
+            border="border-secondary"
+          />
+        </a>
+        <a
+          href="https://bikesandbytes.net"
+          className="w-40 font-body font-semibold self-center text-center border-b-2 border-secondary mt-10 lg:mt-0 lg:mx-auto lg:col-start-5"
+        >
+          bikesandbytes.net
+        </a>
+        <p className="mx-4 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
+          mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
+          risus sit amet justo porta vehicula. Morbi a magna volutpat,
+          ullamcorper risus vel, egestas tortor. Morbi tristique, massa vel
+          accumsan dictum, mauris velit tincidunt justo, non ullamcorper tortor
+          neque quis leo. Integer nisl mauris, sollicitudin a imperdiet a,
+          ornare id risus. Duis eleifend leo mauris, pellentesque lacinia nisl
+          volutpat sed.
+        </p>
       </div>
-      <div className="w-full mb-20 lg:mb-40">
-        <ProjectImage
-          url="bikesandbytes.net"
-          data={data.allFile.nodes[1]}
-          border="border-accent"
-        />
-        <HorizontalRuleAccent />
+
+      <div className="flex flex-col my-10 lg:my-20 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
+        <a
+          href="https://movewithmadeline.com"
+          className="flex flex-col lg:col-start-2 lg:col-span-2"
+        >
+          <ProjectImage
+            data={data.moveWithMadeline.childImageSharp}
+            border="border-accent"
+          />
+        </a>
+        <a
+          href="https://movewithmadeline.com"
+          className="w-56 font-body font-semibold self-center text-center border-b-2 mt-10 border-accent lg:mt-0 lg:col-start-5 "
+        >
+          movewithmadeline.com
+        </a>
+        <p className="mx-4 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
+          mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
+          risus sit amet justo porta vehicula. Morbi a magna volutpat,
+          ullamcorper risus vel, egestas tortor. Morbi tristique, massa vel
+          accumsan dictum, mauris velit tincidunt justo, non ullamcorper tortor
+          neque quis leo. Integer nisl mauris, sollicitudin a imperdiet a,
+          ornare id risus. Duis eleifend leo mauris, pellentesque lacinia nisl
+          volutpat sed.
+        </p>
       </div>
-      <div className="w-full mb-0">
-        <ProjectImage
-          url="bikesandbytes.net"
-          data={data.allFile.nodes[1]}
-          border="border-secondary"
-        />
-        <HorizontalRulePrimary />
+
+      <div className="flex flex-col mt-10 mb-32 lg:grid lg:grid-cols-10 lg:grid-rows-1 ">
+        <a
+          href="http://abqtrails.deepdivecoding.com/"
+          className="flex flex-col lg:col-start-2 lg:col-span-2"
+        >
+          <ProjectImage
+            data={data.abqBikeTrails.childImageSharp}
+            border="border-primary"
+          />
+        </a>
+        <a
+          href="http://abqtrails.deepdivecoding.com/"
+          className="w-64 font-body font-semibold self-center text-center border-b-2 mt-10 border-primary lg:mt-0 lg:col-start-5 lg:mx-auto"
+        >
+          abqtrails.deepdivecoding.com
+        </a>
+        <p className="mx-4 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
+          mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
+          risus sit amet justo porta vehicula. Morbi a magna volutpat,
+          ullamcorper risus vel, egestas tortor. Morbi tristique, massa vel
+          accumsan dictum, mauris velit tincidunt justo, non ullamcorper tortor
+          neque quis leo. Integer nisl mauris, sollicitudin a imperdiet a,
+          ornare id risus. Duis eleifend leo mauris, pellentesque lacinia nisl
+          volutpat sed.
+        </p>
       </div>
     </>
   )
