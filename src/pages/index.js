@@ -56,9 +56,11 @@ const IndexPage = () => {
 
       <div className="mx-auto my-10">
         <WaveEmoji />
-        <h1 className="font-body text-5xl font-black">Hi there, I'm Will!</h1>
+        <h1 className="font-body mx-8 text-5xl font-black">
+          Hi there, I'm Will!
+        </h1>
       </div>
-      <p className="font-body font-bold mx-auto w-1/2 mb-12 leading-8 opacity-75 lg:mb-20 lg:mx-auto">
+      <p className="font-body font-bold mx-8 lg:mx-auto lg:w-1/2 mb-12 leading-8 opacity-75 lg:mb-20 lg:mx-auto">
         Blurb about me blah blah blah Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Praesent vitae orci at. Lorem ipsum dolor sit amet,
         consectetur adipiscing elit. Fusce rhoncus mauris sit amet lobortis
@@ -92,7 +94,7 @@ const IndexPage = () => {
         >
           bikesandbytes.net
         </a>
-        <p className="mx-4 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+        <p className="mx-8 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
           mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
           risus sit amet justo porta vehicula. Morbi a magna volutpat,
@@ -120,7 +122,7 @@ const IndexPage = () => {
         >
           movewithmadeline.com
         </a>
-        <p className="mx-4 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+        <p className="mx-8 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
           mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
           risus sit amet justo porta vehicula. Morbi a magna volutpat,
@@ -148,7 +150,7 @@ const IndexPage = () => {
         >
           abqtrails.deepdivecoding.com
         </a>
-        <p className="mx-4 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
+        <p className="mx-8 mt-10 self-center leading-6 opacity-75 lg:my-0 lg:mx-0 lg:col-start-7 lg:col-span-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus
           mauris sit amet lobortis rutrum. Nulla non sagittis neque. Mauris eget
           risus sit amet justo porta vehicula. Morbi a magna volutpat,
