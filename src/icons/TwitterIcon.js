@@ -8,7 +8,7 @@ export default function TwitterIcon({ twClasses }) {
       aria-label="Link to Will Harris' Twitter Profile"
     >
       <svg
-        className={`h-6 w-6 fill-current text-primary ${twClasses}`}
+        className={`h-10 w-10 fill-current text-primary ${twClasses}`}
         viewBox="0 0 24 24"
         role="img"
         ariaLabel="[title]"
