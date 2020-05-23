@@ -68,7 +68,7 @@ const Header = ({ resume }) => {
             <li className="mr-3">
               <Link
                 className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                to="#"
+                to="/contact"
               >
                 CONTACT
               </Link>
